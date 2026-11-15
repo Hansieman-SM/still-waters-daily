@@ -38,6 +38,30 @@
    "publishAt": "2026-11-24 02:00 Europe/Amsterdam",
    "attempts": 1,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-1899620197212274490"
+  },
+  "2026-11-22-long-psalm-121": {
+   "date": "2026-11-22",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "2026-11-22-long-psalm-121",
+   "metricool": {
+    "youtube": 429051169
+   },
+   "publishAt": "2026-11-23 03:00 Europe/Amsterdam",
+   "attempts": 1,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=8670032772341317748"
+  },
+  "2026-11-29-long-isaiah-40": {
+   "date": "2026-11-29",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "2026-11-29-long-isaiah-40",
+   "metricool": {
+    "youtube": 429051300
+   },
+   "publishAt": "2026-11-30 03:00 Europe/Amsterdam",
+   "attempts": 1,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-662335867624404320"
   }
  }
 }
