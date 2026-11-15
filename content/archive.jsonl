@@ -59,3 +59,6 @@
 {"date": "2026-11-22", "slot": "evening", "ref": "Psalm 91:1–2", "title": "Under the Shadow of the Almighty", "source": "scheduled by hand before automation"}
 {"date": "2026-11-22", "slot": "loop", "ref": "Proverbs 18:10", "title": "The name of the Lord is a strong tower", "source": "scheduled by hand before automation"}
 {"date": "2026-11-22", "slot": "verse", "ref": "Psalm 46:1", "title": "God Is Our Refuge and Strength", "source": "scheduled by hand before automation"}
+{"date": "2026-11-23", "slot": "verse", "ref": "Psalm 107:1", "hook": "Start this week with thanks", "title": "His Mercy Endureth For Ever", "id": "2026-11-23-verse-give-thanks"}
+{"date": "2026-11-23", "slot": "loop", "ref": "Psalm 9:1", "hook": "Praise with your whole heart", "title": "I will praise thee, O LORD, with my whole heart", "id": "2026-11-23-loop-give-thanks"}
+{"date": "2026-11-23", "slot": "evening", "ref": "Psalm 103:2", "hook": "Before you sleep tonight", "title": "Forget Not All His Benefits", "id": "2026-11-23-evening-give-thanks"}

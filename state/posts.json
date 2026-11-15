@@ -1,1 +1,43 @@
-{"posts": {}}
+{
+ "posts": {
+  "2026-11-23-verse-give-thanks": {
+   "date": "2026-11-23",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "2026-11-23-verse-give-thanks",
+   "metricool": {
+    "social": 428986847,
+    "youtube": 428987015
+   },
+   "publishAt": "2026-11-23 13:00 Europe/Amsterdam",
+   "attempts": 1,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-533057437186438471"
+  },
+  "2026-11-23-loop-give-thanks": {
+   "date": "2026-11-23",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-11-23-loop-give-thanks",
+   "metricool": {
+    "social": 428987058,
+    "youtube": 428987096
+   },
+   "publishAt": "2026-11-23 18:00 Europe/Amsterdam",
+   "attempts": 1,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-2315425783232180760"
+  },
+  "2026-11-23-evening-give-thanks": {
+   "date": "2026-11-23",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-11-23-evening-give-thanks",
+   "metricool": {
+    "social": 428987147,
+    "youtube": 428987203
+   },
+   "publishAt": "2026-11-24 02:00 Europe/Amsterdam",
+   "attempts": 1,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-1899620197212274490"
+  }
+ }
+}
