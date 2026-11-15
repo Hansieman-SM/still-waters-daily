@@ -73,7 +73,13 @@ def build_long(sid, at=None):
     """Weekly long video: YouTube only (type video, with custom thumbnail), Monday 03:00 Amsterdam after the calendar Sunday."""
     s = json.load(open(os.path.join(ROOT, 'content', 'long', sid + '.json')))
     meta_p = os.path.join(ROOT, 'out', sid, sid + '.meta.json')
-    chapters = s.get('chapters') or (json.load(open(meta_p))['chapters'] if os.path.exists(meta_p) else [])
+    if os.path.exists(meta_p):
+        meta = json.load(open(meta_p))
+    else:                      # fetch the meta (chapters, readings) from the release
+        import urllib.request
+        meta = json.load(urllib.request.urlopen(CFG['hosting']['releaseUrl'].format(tag=sid, file=sid + '.meta.json')))
+    chapters = s.get('chapters') or meta.get('chapters', [])
+    nr = {3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight'}.get(meta.get('readings', 3), 'several')
     tz = CFG['schedule']['timezone']
     if at:
         date, time = at.split('T')
@@ -82,7 +88,7 @@ def build_long(sid, at=None):
     off = dt.datetime.fromisoformat(f"{date}T{time}").replace(tzinfo=ZoneInfo(tz)).strftime('%z')
     url = lambda f: CFG['hosting']['releaseUrl'].format(tag=sid, file=f)
     title = bible.passage_title(s['passage'])
-    text = (f"{s['description']} 🕊️\n\nThe passage is read aloud three times, each time followed by a quiet pass of the same verses for reflection.\n\n"
+    text = (f"{s['description']} 🕊️\n\nThe passage is read aloud {nr} times, each time followed by a quiet pass of the same verses for reflection.\n\n"
             + '\n'.join(chapters) + f"\n\nScripture: {title} (King James Version)\n\n"
             "Whatever you are carrying tonight, you are not alone. May His peace be with you.\n\n"
             "Subscribe to Still Waters Daily for a daily word of peace: a Bible verse every day and encouragement every evening.\n\n"

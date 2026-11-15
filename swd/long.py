@@ -14,6 +14,7 @@ ROOT = os.path.join(os.path.dirname(__file__), '..')
 CFG = json.load(open(os.path.join(ROOT, 'config', 'channel.json')))
 FONTS = os.path.join(ROOT, 'fonts', 'ass')
 INTRO, OUTRO, GAP, VERSE_PAUSE = 9.0, 14.0, 3.0, 2.4
+WORDS = {3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight'}
 
 
 def build_audio(verses, script, seed):
@@ -31,6 +32,8 @@ def timeline(verses, clips, intro_clip, minutes, readings):
     durs = [len(c) / tts.SR for c in clips]
     read_len = sum(d + VERSE_PAUSE for d in durs)
     target = minutes * 60
+    if not readings:   # auto: as many readings as needed so each verse rests ~20-35 s in the quiet passes
+        readings = int(max(3, min(8, round((target - INTRO - OUTRO) / (read_len + len(verses) * 28 + 2 * GAP)))))
     fixed = INTRO + OUTRO + readings * read_len + (2 * readings) * GAP
     silent_each = max(9.0, (target - fixed) / (readings * len(verses)))
     t = INTRO; ev, voice, quiet = [], [(INTRO - 3.2, intro_clip)], []
@@ -41,7 +44,7 @@ def timeline(verses, clips, intro_clip, minutes, readings):
         for i in range(len(verses)):
             ev.append((t, t + silent_each - 0.3, 'quiet', i)); t += silent_each
         quiet.append((q0, t)); t += GAP
-    return ev, voice, t + OUTRO, quiet, silent_each
+    return ev, voice, t + OUTRO, quiet, silent_each, readings
 
 
 def thumbnail(frame, script, path):
@@ -71,7 +74,7 @@ def render(path, outdir):
     seed = int(hashlib.sha1(sid.encode()).hexdigest()[:8], 16)
     verses = bible.passage(s['passage'])
     clips, intro_clip = build_audio(verses, s, seed)
-    ev, voice_at, total, quiet, silent_each = timeline(verses, clips, intro_clip, s.get('minutes', 30), s.get('readings', 3))
+    ev, voice_at, total, quiet, silent_each, readings = timeline(verses, clips, intro_clip, s.get('minutes', 30), s.get('readings'))
 
     # audio: voice track + tiled piano, music a little louder during the silent passes
     sr = tts.SR; n = int(total * sr)
@@ -103,13 +106,13 @@ def render(path, outdir):
     A.style('Title', 'SWD Cormorant SemiBold', 104, 'F6F0E4', align=5, ml=200, mr=200, outline=3)
     A.style('Sub', 'SWD Cormorant', 54, 'F6F0E4', align=8, mv=560, ml=200, mr=200, outline=2)
     A.style('Gold', 'Lato', 34, 'E5C27A', align=8, mv=150, spacing=6, outline=2)
-    A.style('Verse', 'SWD Cormorant', 66, 'F6F0E4', align=8, mv=225, ml=250, mr=250, outline=3)
+    A.style('Verse', 'SWD Cormorant', 74, 'F6F0E4', align=8, mv=225, ml=230, mr=230, outline=3)
     A.style('Small', 'Lato', 32, 'E2DDD2', align=2, mv=70, outline=2)
     A.add(0, total, 'Brand', CFG['channel'], fade=(0, 0))
     title = bible.passage_title(s['passage'])
     A.add(0.3, INTRO - 0.4, 'Title', title, fade=(900, 700), extra='\\pos(960,430)')
     A.add(0.8, INTRO - 0.4, 'Sub', s.get('subtitle', ''), fade=(900, 700))
-    A.add(1.2, INTRO - 0.4, 'Small', 'King James Version  ·  Read slowly, three times, with quiet in between', fade=(900, 700))
+    A.add(1.2, INTRO - 0.4, 'Small', f'King James Version  ·  Read slowly, {WORDS[readings]} times, with quiet in between', fade=(900, 700))
     for i, (t0, t1, kind, idx) in enumerate(ev):
         label, text = verses[idx]
         prev_same = i and ev[i - 1][3] == idx - 1 and ev[i - 1][2] == kind
@@ -132,13 +135,13 @@ def render(path, outdir):
 
     chapters, t = ['00:00 Introduction'], INTRO
     blocks = []
-    for r in range(s.get('readings', 3)):
+    for r in range(readings):
         blocks.append(('Reading ' + str(r + 1), ev[r * 2 * len(verses)][0]))
         blocks.append(('Quiet reflection ' + str(r + 1), quiet[r][0]))
     for name, t0 in blocks:
         chapters.append(f'{int(t0 // 60):02d}:{int(t0 % 60):02d} {name}')
     meta = {k: s[k] for k in ('id', 'date', 'kind', 'passage', 'title', 'subtitle') if k in s}
-    meta.update({'seconds': round(total, 1), 'minutes': round(total / 60, 1), 'verses': len(verses), 'silentSecondsPerVerse': round(silent_each, 1),
+    meta.update({'readings': readings, 'seconds': round(total, 1), 'minutes': round(total / 60, 1), 'verses': len(verses), 'silentSecondsPerVerse': round(silent_each, 1),
                  'scene': scene_name, 'chapters': chapters, 'music': minfo, 'kind': 'long',
                  'provenance': {'scripture': 'King James Version (public domain), verbatim from data/kjv.json',
                                 'voice': 'Kokoro-82M bm_george via kokoro-onnx (Apache-2.0 / MIT)',
