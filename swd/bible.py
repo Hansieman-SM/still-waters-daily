@@ -37,6 +37,27 @@ def verse(ref):
     return re.sub(r'\s+([,;:.?!])', r'\1', t)          # dataset quirk: 'LORD , for' -> 'LORD, for'
 
 
+def passage(ref, max_verses=40):
+    """Whole chapter ('Psalm 121') or a range ('Isaiah 40:1-11'). -> [(label 'Psalm 121:1', verbatim text)]"""
+    m = re.fullmatch(r'\s*((?:[123] )?[A-Za-z ]+?)\s+(\d+)(?::(\d+)(?:\s*[-–]\s*(\d+))?)?\s*', ref)
+    if not m:
+        raise ValueError(f'bad passage {ref!r}')
+    book = ALIAS.get(m.group(1).strip(), m.group(1).strip()); ch = int(m.group(2))
+    if book not in books() or not 0 < ch <= len(books()[book]):
+        raise ValueError(f'{ref} does not exist in the KJV')
+    chap = books()[book][ch - 1]
+    v1 = int(m.group(3) or 1); v2 = int(m.group(4) or (m.group(3) or len(chap)))
+    if v2 > len(chap) or v2 < v1 or v2 - v1 + 1 > max_verses:
+        raise ValueError(f'{ref}: bad verse range (max {max_verses} verses)')
+    name = 'Psalm' if book == 'Psalms' else book
+    return [(f'{name} {ch}:{v}', re.sub(r'\s+([,;:.?!])', r'\1', re.sub(r'\s+', ' ', chap[v - 1]).strip())) for v in range(v1, v2 + 1)]
+
+
+def passage_title(ref):
+    p = passage(ref); a = p[0][0]; b = p[-1][0].split(':')[1]
+    return a if len(p) == 1 else (a.split(':')[0] if a.endswith(':1') and len(p) == len(passage(a.split(':')[0])) else f'{a}–{b}')
+
+
 def shown(ref):
     """Verbatim KJV text for the screen/caption; only a dangling , ; : at the very end is dropped (standard quoting)."""
     return re.sub(r'[,;:]$', '', verse(ref))

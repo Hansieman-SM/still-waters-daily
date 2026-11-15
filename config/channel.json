@@ -41,7 +41,9 @@
       }
     ],
     "slotNote": "The script date is the calendar day. The evening post of day D goes live at D+1 02:00 Amsterdam (= 20:00 the evening before in New York).",
-    "bufferDays": 8
+    "bufferDays": 8,
+    "longTime": "03:00",
+    "longNote": "Weekly long video (calendar sundayLongVideo): YouTube only, Monday 03:00 Amsterdam after the calendar Sunday (= Sunday evening in America), like the Psalm 23 video of 9 Nov 2026."
   },
   "voice": {
     "engine": "kokoro-onnx (Kokoro-82M, Apache-2.0)",

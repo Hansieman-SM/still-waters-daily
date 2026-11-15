@@ -3,7 +3,7 @@ Every scene: Scene(rng, W, H, total).frame(t) -> float32 HxWx3 in 0..1. Motion i
 slow push-in, shimmering water, twinkling stars, swaying wheat, drifting mist."""
 import numpy as np, cv2
 
-HORIZON = 1150
+HORIZON_FRAC = 1150 / 1920          # horizon height as a fraction of the frame (portrait and landscape)
 
 
 def hexc(h):
@@ -83,7 +83,7 @@ def draw_sparkles(img, sp, t, col, k=1.0, ox=0, oy=0, scale=1.0):
 class Meadow(Base):
     """Blue-hour meadow with a winding stream that shimmers (as on 'You are not alone')."""
     def paint(self, W, H):
-        r = self.rng; hz = int(HORIZON * self.S)
+        r = self.rng; hz = int(HORIZON_FRAC * H)
         img = vgrad(H, W, [(0, '#3e5170'), (0.35, '#5f7090'), (0.52, '#8d97a8'), (0.6, '#a9aeb4'), (1, '#a9aeb4')])
         fill_below(img, ridge(W, hz - 70, 40, r), hexc('#55665f'), 3)
         fill_below(img, ridge(W, hz - 20, 30, r), hexc('#3f5848'), 2)
@@ -115,9 +115,11 @@ class Meadow(Base):
 class MoonLake(Base):
     """Night lake: moon with halo, twinkling stars, a moon path that ripples on the water."""
     def paint(self, W, H):
-        r = self.rng; hz = int(HORIZON * self.S)
+        r = self.rng; hz = int(HORIZON_FRAC * H)
         img = vgrad(H, W, [(0, '#0d1428'), (0.45, '#18223c'), (hz / H, '#26314c'), (1, '#0e1529')])
-        self.mx, self.my = W / 2 + 70 + r.uniform(0, 40), int(250 * self.S)
+        land = W > H
+        self.mx = W * (0.86 if land else 0.5) + (0 if land else 70) + r.uniform(0, 40)
+        self.my = H * (0.13 if land else 250 / 1920)
         m, d = disc(H, W, self.mx, self.my, 62)
         img += (np.exp(-(d / 230) ** 2) * 0.18)[..., None] * hexc('#c8cede')
         img[:] = img * (1 - m[..., None]) + hexc('#cfcab8') * m[..., None]
@@ -144,7 +146,7 @@ class MoonLake(Base):
 class Sunset(Base):
     """Purple-amber sunset over the sea, sun on the horizon, a glittering sun path."""
     def paint(self, W, H):
-        r = self.rng; hz = int(HORIZON * self.S)
+        r = self.rng; hz = int(HORIZON_FRAC * H)
         img = vgrad(H, W, [(0, '#2f2a44'), (0.3, '#5a4560'), (0.47, '#9a7468'), (hz / H, '#d8a86a'), (1, '#3a2e3e')])
         self.sx = W / 2 + r.uniform(-60, 60)
         m, d = disc(H, W, self.sx, hz - 8, 58)
@@ -166,7 +168,7 @@ class Sunset(Base):
 class Wheat(Base):
     """Golden wheat field at dusk that sways in a soft breeze (as on 'Worried about tomorrow?')."""
     def paint(self, W, H):
-        r = self.rng; hz = int(HORIZON * self.S)
+        r = self.rng; hz = int(HORIZON_FRAC * H)
         img = vgrad(H, W, [(0, '#2c2a48'), (0.35, '#5b4766'), (0.5, '#a07a6a'), (hz / H, '#c99a62'), (1, '#c99a62')])
         m, d = disc(H, W, W / 2 + r.uniform(-100, 100), hz - 40, 64)
         img += (np.exp(-(d / 240) ** 2) * 0.15)[..., None] * hexc('#ffdca0')
@@ -198,7 +200,7 @@ class Wheat(Base):
 class DawnLake(Base):
     """Soft dawn over a still lake with tree line, drifting mist and gentle ripples."""
     def paint(self, W, H):
-        r = self.rng; hz = int(HORIZON * self.S)
+        r = self.rng; hz = int(HORIZON_FRAC * H)
         img = vgrad(H, W, [(0, '#41567a'), (0.3, '#7a86a6'), (0.48, '#c9a7a6'), (hz / H, '#ecc79e'), (1, '#ecc79e')])
         line = ridge(W, hz - 14, 8, r, 4)
         x = 0.0

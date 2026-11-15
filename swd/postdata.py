@@ -69,7 +69,39 @@ def build(sid, at=None, nets=None):
     return out
 
 
+def build_long(sid, at=None):
+    """Weekly long video: YouTube only (type video, with custom thumbnail), Monday 03:00 Amsterdam after the calendar Sunday."""
+    s = json.load(open(os.path.join(ROOT, 'content', 'long', sid + '.json')))
+    meta_p = os.path.join(ROOT, 'out', sid, sid + '.meta.json')
+    chapters = s.get('chapters') or (json.load(open(meta_p))['chapters'] if os.path.exists(meta_p) else [])
+    tz = CFG['schedule']['timezone']
+    if at:
+        date, time = at.split('T')
+    else:
+        date = (dt.date.fromisoformat(s['date']) + dt.timedelta(days=1)).isoformat(); time = CFG['schedule'].get('longTime', '03:00')
+    off = dt.datetime.fromisoformat(f"{date}T{time}").replace(tzinfo=ZoneInfo(tz)).strftime('%z')
+    url = lambda f: CFG['hosting']['releaseUrl'].format(tag=sid, file=f)
+    title = bible.passage_title(s['passage'])
+    text = (f"{s['description']} 🕊️\n\nThe passage is read aloud three times, each time followed by a quiet pass of the same verses for reflection.\n\n"
+            + '\n'.join(chapters) + f"\n\nScripture: {title} (King James Version)\n\n"
+            "Whatever you are carrying tonight, you are not alone. May His peace be with you.\n\n"
+            "Subscribe to Still Waters Daily for a daily word of peace: a Bible verse every day and encouragement every evening.\n\n"
+            + ' '.join(s.get('hashtags', ['#bibleverses', '#sleep', '#christianmeditation', '#scripture', '#peace', '#prayer', '#biblereading', '#faith', '#kjv'])))
+    tags = [title.lower().replace('–', '-'), 'bible verses for sleep', 'scripture for sleep', 'christian meditation', 'bible reading',
+            'peaceful scripture', 'calm bible verses', 'kjv', "sleep with god's word", 'prayer', 'rest'] + s.get('tags', [])
+    info = {'autoPublish': True, 'draft': False, 'text': text, 'firstCommentText': '', 'descendants': [], 'hasNotReadNotes': False,
+            'shortener': False, 'smartLinkData': {'ids': []}, 'mediaAltText': [], 'media': [url(sid + '.mp4')],
+            'videoThumbnailUrl': url(sid + '_thumb.jpg'),
+            'publicationDate': {'dateTime': f"{date}T{time}:00", 'timezone': tz}, 'providers': [{'network': 'youtube'}],
+            'youtubeData': {'title': s['title'][:100], 'type': 'video', 'privacy': 'public', 'tags': tags[:15], 'category': 'PEOPLE_BLOGS',
+                            'madeForKids': False, 'isAiGeneratedContent': False}}
+    return [{'part': 'youtube-long', 'blogId': str(CFG['metricool']['brandId']), 'date': f"{date}T{time}:00{off[:3]}:{off[3:]}",
+             'info': json.dumps(info, ensure_ascii=False)}]
+
+
 if __name__ == '__main__':
     a = sys.argv
     nets = a[a.index('--networks') + 1].split(',') if '--networks' in a else None
+    if '-long-' in a[1]:
+        print(json.dumps(build_long(a[1], a[a.index('--at') + 1] if '--at' in a else None), indent=1, ensure_ascii=False)); sys.exit()
     print(json.dumps(build(a[1], a[a.index('--at') + 1] if '--at' in a else None, nets), indent=1, ensure_ascii=False))
