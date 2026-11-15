@@ -1,0 +1,648 @@
+{
+ "source": "Approved 3-month calendar from the doc \"Christian Channel – Startplan\" (Hans, Nov 2026). Week 2 and 3 are already produced.",
+ "rules": "Verse of the Day uses verseRef, Evening Encouragement uses eveningRef/eveningTheme. The loop verse is chosen by the writer: one short KJV verse (max ~30 words) on the dayTheme, not used in the last 60 days. After 31 Jan 2027: Lent from Ash Wednesday 10 Feb 2027 and Easter 28 Mar 2027 - write the next calendar weeks in the same style before the buffer reaches them, and tell Hans.",
+ "sundayLongVideo": {
+  "4": "Isaiah 40 – Comfort ye my people",
+  "5": "Psalm 46",
+  "6": "Luke 1:46–55 – Magnificat",
+  "7": "Isaiah 9:2–7",
+  "8": "Luke 2:1–20 (extra on 24 Dec) · John 1:1–14",
+  "9": "Psalm 139",
+  "10": "Psalm 27",
+  "11": "Matthew 6:5–15 – the Lord's Prayer",
+  "12": "1 Corinthians 13",
+  "13": "Psalm 103"
+ },
+ "days": [
+  {
+   "date": "2026-11-23",
+   "week": 4,
+   "weekTheme": "Thankfulness",
+   "dayTheme": "Give thanks",
+   "verseRef": "Psalm 107:1",
+   "eveningTheme": "Forget not His benefits",
+   "eveningRef": "Psalm 103:2"
+  },
+  {
+   "date": "2026-11-24",
+   "week": 4,
+   "weekTheme": "Thankfulness",
+   "dayTheme": "Every good gift",
+   "verseRef": "James 1:17",
+   "eveningTheme": "Thankful in hard times",
+   "eveningRef": "Habakkuk 3:17-18"
+  },
+  {
+   "date": "2026-11-25",
+   "week": 4,
+   "weekTheme": "Thankfulness",
+   "dayTheme": "A thankful heart",
+   "verseRef": "Colossians 3:15",
+   "eveningTheme": "Prayer with thanksgiving",
+   "eveningRef": "Philippians 4:6"
+  },
+  {
+   "date": "2026-11-26",
+   "week": 4,
+   "weekTheme": "Thankfulness",
+   "dayTheme": "Thanksgiving Day",
+   "verseRef": "Psalm 100:4",
+   "eveningTheme": "A Thanksgiving blessing",
+   "eveningRef": "Numbers 6:24-26"
+  },
+  {
+   "date": "2026-11-27",
+   "week": 4,
+   "weekTheme": "Thankfulness",
+   "dayTheme": "Contentment",
+   "verseRef": "Philippians 4:11",
+   "eveningTheme": "He will never leave you",
+   "eveningRef": "Hebrews 13:5"
+  },
+  {
+   "date": "2026-11-28",
+   "week": 4,
+   "weekTheme": "Thankfulness",
+   "dayTheme": "Rejoice",
+   "verseRef": "Philippians 4:4",
+   "eveningTheme": "The joy of the Lord",
+   "eveningRef": "Nehemiah 8:10"
+  },
+  {
+   "date": "2026-11-29",
+   "week": 4,
+   "weekTheme": "Thankfulness",
+   "dayTheme": "First Sunday of Advent: hope",
+   "verseRef": "Isaiah 9:2",
+   "eveningTheme": "The God of hope",
+   "eveningRef": "Romans 15:13"
+  },
+  {
+   "date": "2026-11-30",
+   "week": 5,
+   "weekTheme": "Advent: expectation",
+   "dayTheme": "Prepare the way",
+   "verseRef": "Isaiah 40:3",
+   "eveningTheme": "Make room for the King",
+   "eveningRef": "Psalm 24:7"
+  },
+  {
+   "date": "2026-12-01",
+   "week": 5,
+   "weekTheme": "Advent: expectation",
+   "dayTheme": "The promise",
+   "verseRef": "Isaiah 7:14",
+   "eveningTheme": "God keeps His promises",
+   "eveningRef": "2 Corinthians 1:20"
+  },
+  {
+   "date": "2026-12-02",
+   "week": 5,
+   "weekTheme": "Advent: expectation",
+   "dayTheme": "Waiting with hope",
+   "verseRef": "Psalm 130:5",
+   "eveningTheme": "Hope in the dark",
+   "eveningRef": "Micah 7:7"
+  },
+  {
+   "date": "2026-12-03",
+   "week": 5,
+   "weekTheme": "Advent: expectation",
+   "dayTheme": "Emmanuel, God with us",
+   "verseRef": "Matthew 1:23",
+   "eveningTheme": "He is with you",
+   "eveningRef": "Joshua 1:9"
+  },
+  {
+   "date": "2026-12-04",
+   "week": 5,
+   "weekTheme": "Advent: expectation",
+   "dayTheme": "Light of the world",
+   "verseRef": "John 8:12",
+   "eveningTheme": "Let your light shine",
+   "eveningRef": "Matthew 5:16"
+  },
+  {
+   "date": "2026-12-05",
+   "week": 5,
+   "weekTheme": "Advent: expectation",
+   "dayTheme": "It will surely come",
+   "verseRef": "Habakkuk 2:3",
+   "eveningTheme": "You are not forgotten",
+   "eveningRef": "Isaiah 49:16"
+  },
+  {
+   "date": "2026-12-06",
+   "week": 5,
+   "weekTheme": "Advent: expectation",
+   "dayTheme": "Second Sunday of Advent: peace",
+   "verseRef": "Isaiah 9:6",
+   "eveningTheme": "Peace in a troubled world",
+   "eveningRef": "John 16:33"
+  },
+  {
+   "date": "2026-12-07",
+   "week": 6,
+   "weekTheme": "Advent: peace",
+   "dayTheme": "Perfect peace",
+   "verseRef": "Isaiah 26:3",
+   "eveningTheme": "Peace beyond understanding",
+   "eveningRef": "Philippians 4:7"
+  },
+  {
+   "date": "2026-12-08",
+   "week": 6,
+   "weekTheme": "Advent: peace",
+   "dayTheme": "Peace with God",
+   "verseRef": "Romans 5:1",
+   "eveningTheme": "Peace in the storm",
+   "eveningRef": "Mark 4:39"
+  },
+  {
+   "date": "2026-12-09",
+   "week": 6,
+   "weekTheme": "Advent: peace",
+   "dayTheme": "Blessed are the peacemakers",
+   "verseRef": "Matthew 5:9",
+   "eveningTheme": "Peace at home",
+   "eveningRef": "Colossians 3:13"
+  },
+  {
+   "date": "2026-12-10",
+   "week": 6,
+   "weekTheme": "Advent: peace",
+   "dayTheme": "The Lord of peace",
+   "verseRef": "2 Thessalonians 3:16",
+   "eveningTheme": "Sleep in peace",
+   "eveningRef": "Psalm 4:8"
+  },
+  {
+   "date": "2026-12-11",
+   "week": 6,
+   "weekTheme": "Advent: peace",
+   "dayTheme": "Strength and peace",
+   "verseRef": "Psalm 29:11",
+   "eveningTheme": "Rest for your soul",
+   "eveningRef": "Matthew 11:29"
+  },
+  {
+   "date": "2026-12-12",
+   "week": 6,
+   "weekTheme": "Advent: peace",
+   "dayTheme": "Let not your heart be troubled",
+   "verseRef": "John 14:1",
+   "eveningTheme": "Trust in the night",
+   "eveningRef": "Psalm 56:3"
+  },
+  {
+   "date": "2026-12-13",
+   "week": 6,
+   "weekTheme": "Advent: peace",
+   "dayTheme": "Third Sunday of Advent: joy",
+   "verseRef": "Luke 1:46-47",
+   "eveningTheme": "Joy that remains",
+   "eveningRef": "John 15:11"
+  },
+  {
+   "date": "2026-12-14",
+   "week": 7,
+   "weekTheme": "Advent: joy and love",
+   "dayTheme": "Joy comes in the morning",
+   "verseRef": "Psalm 30:5",
+   "eveningTheme": "Joy in trials",
+   "eveningRef": "James 1:2-3"
+  },
+  {
+   "date": "2026-12-15",
+   "week": 7,
+   "weekTheme": "Advent: joy and love",
+   "dayTheme": "Fullness of joy",
+   "verseRef": "Psalm 16:11",
+   "eveningTheme": "Rejoicing in hope",
+   "eveningRef": "Romans 12:12"
+  },
+  {
+   "date": "2026-12-16",
+   "week": 7,
+   "weekTheme": "Advent: joy and love",
+   "dayTheme": "Mary's yes",
+   "verseRef": "Luke 1:38",
+   "eveningTheme": "Commit your plans",
+   "eveningRef": "Proverbs 16:3"
+  },
+  {
+   "date": "2026-12-17",
+   "week": 7,
+   "weekTheme": "Advent: joy and love",
+   "dayTheme": "Nothing is impossible",
+   "verseRef": "Luke 1:37",
+   "eveningTheme": "When it looks impossible",
+   "eveningRef": "Matthew 19:26"
+  },
+  {
+   "date": "2026-12-18",
+   "week": 7,
+   "weekTheme": "Advent: joy and love",
+   "dayTheme": "Joseph's trust",
+   "verseRef": "Matthew 1:20",
+   "eveningTheme": "Faith in the unseen",
+   "eveningRef": "Hebrews 11:1"
+  },
+  {
+   "date": "2026-12-19",
+   "week": 7,
+   "weekTheme": "Advent: joy and love",
+   "dayTheme": "The Word became flesh",
+   "verseRef": "John 1:14",
+   "eveningTheme": "He understands you",
+   "eveningRef": "Hebrews 4:15-16"
+  },
+  {
+   "date": "2026-12-20",
+   "week": 7,
+   "weekTheme": "Advent: joy and love",
+   "dayTheme": "Fourth Sunday of Advent: love",
+   "verseRef": "1 John 4:9",
+   "eveningTheme": "Love came down",
+   "eveningRef": "1 John 4:10"
+  },
+  {
+   "date": "2026-12-21",
+   "week": 8,
+   "weekTheme": "Christmas",
+   "dayTheme": "Bethlehem",
+   "verseRef": "Micah 5:2",
+   "eveningTheme": "Small beginnings",
+   "eveningRef": "Zechariah 4:10"
+  },
+  {
+   "date": "2026-12-22",
+   "week": 8,
+   "weekTheme": "Christmas",
+   "dayTheme": "No room in the inn",
+   "verseRef": "Luke 2:7",
+   "eveningTheme": "Make room for Him",
+   "eveningRef": "Revelation 3:20"
+  },
+  {
+   "date": "2026-12-23",
+   "week": 8,
+   "weekTheme": "Christmas",
+   "dayTheme": "The shepherds",
+   "verseRef": "Luke 2:8-9",
+   "eveningTheme": "God lifts the lowly",
+   "eveningRef": "Luke 1:52"
+  },
+  {
+   "date": "2026-12-24",
+   "week": 8,
+   "weekTheme": "Christmas",
+   "dayTheme": "Christmas Eve",
+   "verseRef": "Luke 2:10-11",
+   "eveningTheme": "Holy night",
+   "eveningRef": "Luke 2:19"
+  },
+  {
+   "date": "2026-12-25",
+   "week": 8,
+   "weekTheme": "Christmas",
+   "dayTheme": "Christmas Day",
+   "verseRef": "Luke 2:14",
+   "eveningTheme": "A Christmas blessing",
+   "eveningRef": "Matthew 2:10-11"
+  },
+  {
+   "date": "2026-12-26",
+   "week": 8,
+   "weekTheme": "Christmas",
+   "dayTheme": "The greatest gift",
+   "verseRef": "Romans 6:23",
+   "eveningTheme": "His unspeakable gift",
+   "eveningRef": "2 Corinthians 9:15"
+  },
+  {
+   "date": "2026-12-27",
+   "week": 8,
+   "weekTheme": "Christmas",
+   "dayTheme": "Simeon's peace",
+   "verseRef": "Luke 2:29-30",
+   "eveningTheme": "In the fullness of time",
+   "eveningRef": "Galatians 4:4-5"
+  },
+  {
+   "date": "2026-12-28",
+   "week": 9,
+   "weekTheme": "Looking back and a new beginning",
+   "dayTheme": "Hitherto the Lord has helped us",
+   "verseRef": "1 Samuel 7:12",
+   "eveningTheme": "Remember what He has done",
+   "eveningRef": "Psalm 77:11"
+  },
+  {
+   "date": "2026-12-29",
+   "week": 9,
+   "weekTheme": "Looking back and a new beginning",
+   "dayTheme": "He who began a good work",
+   "verseRef": "Philippians 1:6",
+   "eveningTheme": "Still being made whole",
+   "eveningRef": "Psalm 138:8"
+  },
+  {
+   "date": "2026-12-30",
+   "week": 9,
+   "weekTheme": "Looking back and a new beginning",
+   "dayTheme": "Pressing on",
+   "verseRef": "Philippians 3:13-14",
+   "eveningTheme": "Letting go of this year",
+   "eveningRef": "Isaiah 43:18"
+  },
+  {
+   "date": "2026-12-31",
+   "week": 9,
+   "weekTheme": "Looking back and a new beginning",
+   "dayTheme": "New Year's Eve",
+   "verseRef": "Psalm 90:12",
+   "eveningTheme": "My times are in His hand",
+   "eveningRef": "Psalm 31:15"
+  },
+  {
+   "date": "2027-01-01",
+   "week": 9,
+   "weekTheme": "Looking back and a new beginning",
+   "dayTheme": "New Year's Day",
+   "verseRef": "Isaiah 43:19",
+   "eveningTheme": "A new creation",
+   "eveningRef": "2 Corinthians 5:17"
+  },
+  {
+   "date": "2027-01-02",
+   "week": 9,
+   "weekTheme": "Looking back and a new beginning",
+   "dayTheme": "A year crowned with goodness",
+   "verseRef": "Psalm 65:11",
+   "eveningTheme": "He will guide you",
+   "eveningRef": "Psalm 32:8"
+  },
+  {
+   "date": "2027-01-03",
+   "week": 9,
+   "weekTheme": "Looking back and a new beginning",
+   "dayTheme": "The Lord directs your steps",
+   "verseRef": "Proverbs 16:9",
+   "eveningTheme": "He goes before you",
+   "eveningRef": "Deuteronomy 31:8"
+  },
+  {
+   "date": "2027-01-04",
+   "week": 10,
+   "weekTheme": "Light and faith",
+   "dayTheme": "Walk by faith",
+   "verseRef": "2 Corinthians 5:7",
+   "eveningTheme": "Faith as a mustard seed",
+   "eveningRef": "Matthew 17:20"
+  },
+  {
+   "date": "2027-01-05",
+   "week": 10,
+   "weekTheme": "Light and faith",
+   "dayTheme": "Faith pleases God",
+   "verseRef": "Hebrews 11:6",
+   "eveningTheme": "Seek Him with all your heart",
+   "eveningRef": "Jeremiah 29:13"
+  },
+  {
+   "date": "2027-01-06",
+   "week": 10,
+   "weekTheme": "Light and faith",
+   "dayTheme": "Epiphany",
+   "verseRef": "Isaiah 60:1",
+   "eveningTheme": "You are the light",
+   "eveningRef": "Matthew 5:14"
+  },
+  {
+   "date": "2027-01-07",
+   "week": 10,
+   "weekTheme": "Light and faith",
+   "dayTheme": "A lamp unto my feet",
+   "verseRef": "Psalm 119:105",
+   "eveningTheme": "One step at a time",
+   "eveningRef": "Psalm 37:23"
+  },
+  {
+   "date": "2027-01-08",
+   "week": 10,
+   "weekTheme": "Light and faith",
+   "dayTheme": "Only believe",
+   "verseRef": "Mark 5:36",
+   "eveningTheme": "Help my unbelief",
+   "eveningRef": "Mark 9:24"
+  },
+  {
+   "date": "2027-01-09",
+   "week": 10,
+   "weekTheme": "Light and faith",
+   "dayTheme": "The faithful God",
+   "verseRef": "Deuteronomy 7:9",
+   "eveningTheme": "He remains faithful",
+   "eveningRef": "2 Timothy 2:13"
+  },
+  {
+   "date": "2027-01-10",
+   "week": 10,
+   "weekTheme": "Light and faith",
+   "dayTheme": "Created for a purpose",
+   "verseRef": "Ephesians 2:10",
+   "eveningTheme": "Wonderfully made",
+   "eveningRef": "Psalm 139:14"
+  },
+  {
+   "date": "2027-01-11",
+   "week": 11,
+   "weekTheme": "Prayer",
+   "dayTheme": "Pray without ceasing",
+   "verseRef": "1 Thessalonians 5:17",
+   "eveningTheme": "He is near",
+   "eveningRef": "Psalm 145:18"
+  },
+  {
+   "date": "2027-01-12",
+   "week": 11,
+   "weekTheme": "Prayer",
+   "dayTheme": "Ask, seek, knock",
+   "verseRef": "Matthew 7:7",
+   "eveningTheme": "He hears you",
+   "eveningRef": "1 John 5:14"
+  },
+  {
+   "date": "2027-01-13",
+   "week": 11,
+   "weekTheme": "Prayer",
+   "dayTheme": "The Lord's Prayer",
+   "verseRef": "Matthew 6:9-10",
+   "eveningTheme": "Thy will be done",
+   "eveningRef": "Luke 22:42"
+  },
+  {
+   "date": "2027-01-14",
+   "week": 11,
+   "weekTheme": "Prayer",
+   "dayTheme": "Cast your burden",
+   "verseRef": "Psalm 55:22",
+   "eveningTheme": "Pour out your heart",
+   "eveningRef": "Psalm 62:8"
+  },
+  {
+   "date": "2027-01-15",
+   "week": 11,
+   "weekTheme": "Prayer",
+   "dayTheme": "Praying for one another",
+   "verseRef": "James 5:16",
+   "eveningTheme": "Prayers for everyone",
+   "eveningRef": "1 Timothy 2:1"
+  },
+  {
+   "date": "2027-01-16",
+   "week": 11,
+   "weekTheme": "Prayer",
+   "dayTheme": "Morning prayer",
+   "verseRef": "Psalm 5:3",
+   "eveningTheme": "Waiting in silence",
+   "eveningRef": "Psalm 62:1"
+  },
+  {
+   "date": "2027-01-17",
+   "week": 11,
+   "weekTheme": "Prayer",
+   "dayTheme": "When you have no words",
+   "verseRef": "Romans 8:26",
+   "eveningTheme": "The secret place",
+   "eveningRef": "Matthew 6:6"
+  },
+  {
+   "date": "2027-01-18",
+   "week": 12,
+   "weekTheme": "Unity and love for one another",
+   "dayTheme": "That they all may be one",
+   "verseRef": "John 17:21",
+   "eveningTheme": "The bond of peace",
+   "eveningRef": "Ephesians 4:3"
+  },
+  {
+   "date": "2027-01-19",
+   "week": 12,
+   "weekTheme": "Unity and love for one another",
+   "dayTheme": "Known by our love",
+   "verseRef": "John 13:35",
+   "eveningTheme": "Love in deed and truth",
+   "eveningRef": "1 John 3:18"
+  },
+  {
+   "date": "2027-01-20",
+   "week": 12,
+   "weekTheme": "Unity and love for one another",
+   "dayTheme": "Bear one another's burdens",
+   "verseRef": "Galatians 6:2",
+   "eveningTheme": "Encourage someone",
+   "eveningRef": "Hebrews 10:24"
+  },
+  {
+   "date": "2027-01-21",
+   "week": 12,
+   "weekTheme": "Unity and love for one another",
+   "dayTheme": "Be kind",
+   "verseRef": "Ephesians 4:32",
+   "eveningTheme": "A gentle answer",
+   "eveningRef": "Proverbs 15:1"
+  },
+  {
+   "date": "2027-01-22",
+   "week": 12,
+   "weekTheme": "Unity and love for one another",
+   "dayTheme": "Love your neighbour",
+   "verseRef": "Mark 12:31",
+   "eveningTheme": "Serve one another",
+   "eveningRef": "Galatians 5:13"
+  },
+  {
+   "date": "2027-01-23",
+   "week": 12,
+   "weekTheme": "Unity and love for one another",
+   "dayTheme": "Brothers in unity",
+   "verseRef": "Psalm 133:1",
+   "eveningTheme": "Together in faith",
+   "eveningRef": "Hebrews 10:25"
+  },
+  {
+   "date": "2027-01-24",
+   "week": 12,
+   "weekTheme": "Unity and love for one another",
+   "dayTheme": "The greatest is love",
+   "verseRef": "1 Corinthians 13:13",
+   "eveningTheme": "Love covers much",
+   "eveningRef": "1 Peter 4:8"
+  },
+  {
+   "date": "2027-01-25",
+   "week": 13,
+   "weekTheme": "Grace and forgiveness",
+   "dayTheme": "Saved by grace",
+   "verseRef": "Ephesians 2:8",
+   "eveningTheme": "Not by works",
+   "eveningRef": "Titus 3:5"
+  },
+  {
+   "date": "2027-01-26",
+   "week": 13,
+   "weekTheme": "Grace and forgiveness",
+   "dayTheme": "As far as the east is from the west",
+   "verseRef": "Psalm 103:12",
+   "eveningTheme": "White as snow",
+   "eveningRef": "Isaiah 1:18"
+  },
+  {
+   "date": "2027-01-27",
+   "week": 13,
+   "weekTheme": "Grace and forgiveness",
+   "dayTheme": "Faithful to forgive",
+   "verseRef": "1 John 1:9",
+   "eveningTheme": "The Father runs to you",
+   "eveningRef": "Luke 15:20"
+  },
+  {
+   "date": "2027-01-28",
+   "week": 13,
+   "weekTheme": "Grace and forgiveness",
+   "dayTheme": "No condemnation",
+   "verseRef": "Romans 8:1",
+   "eveningTheme": "Cast into the sea",
+   "eveningRef": "Micah 7:19"
+  },
+  {
+   "date": "2027-01-29",
+   "week": 13,
+   "weekTheme": "Grace and forgiveness",
+   "dayTheme": "Forgiving others",
+   "verseRef": "Matthew 6:14",
+   "eveningTheme": "Letting go of hurt",
+   "eveningRef": "Mark 11:25"
+  },
+  {
+   "date": "2027-01-30",
+   "week": 13,
+   "weekTheme": "Grace and forgiveness",
+   "dayTheme": "A clean heart",
+   "verseRef": "Psalm 51:10",
+   "eveningTheme": "The joy of salvation",
+   "eveningRef": "Psalm 51:12"
+  },
+  {
+   "date": "2027-01-31",
+   "week": 13,
+   "weekTheme": "Grace and forgiveness",
+   "dayTheme": "Grace upon grace",
+   "verseRef": "John 1:16",
+   "eveningTheme": "Grace abounds",
+   "eveningRef": "Romans 5:20"
+  }
+ ]
+}

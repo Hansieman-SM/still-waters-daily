@@ -1,0 +1,68 @@
+{
+ "met_436100": {
+  "file": "met_436100.jpg",
+  "title": "The Nativity",
+  "artist": "Gerard David",
+  "date": "early 1480s",
+  "credit": "Gerard David · The Nativity · early 1480s · The Met (public domain)",
+  "captionCredit": "🎨 Art: Gerard David, The Nativity · The Met (public domain)",
+  "source": "https://www.metmuseum.org/art/collection/search/436100",
+  "license": "CC0 (Met Open Access)",
+  "useFor": "Christmas, Nativity, shepherds (weeks 7-8)"
+ },
+ "met_459007": {
+  "file": "met_459007.jpg",
+  "title": "The Nativity",
+  "artist": "Lorenzo Monaco",
+  "date": "ca. 1406–10",
+  "credit": "Lorenzo Monaco · The Nativity · ca. 1406–10 · The Met (public domain)",
+  "captionCredit": "🎨 Art: Lorenzo Monaco, The Nativity · The Met (public domain)",
+  "source": "https://www.metmuseum.org/art/collection/search/459007",
+  "license": "CC0 (Met Open Access)",
+  "useFor": "Christmas, Nativity (weeks 7-8)"
+ },
+ "met_436570": {
+  "file": "met_436570.jpg",
+  "title": "The Adoration of the Shepherds",
+  "artist": "El Greco",
+  "date": "ca. 1605–10",
+  "credit": "El Greco · The Adoration of the Shepherds · ca. 1605–10 · The Met (public domain)",
+  "captionCredit": "🎨 Art: El Greco, The Adoration of the Shepherds · The Met (public domain)",
+  "source": "https://www.metmuseum.org/art/collection/search/436570",
+  "license": "CC0 (Met Open Access)",
+  "useFor": "shepherds, Christmas Eve (week 8)"
+ },
+ "met_459055": {
+  "file": "met_459055.jpg",
+  "title": "The Annunciation",
+  "artist": "Hans Memling",
+  "date": "1480–89",
+  "credit": "Hans Memling · The Annunciation · 1480–89 · The Met (public domain)",
+  "captionCredit": "🎨 Art: Hans Memling, The Annunciation · The Met (public domain)",
+  "source": "https://www.metmuseum.org/art/collection/search/459055",
+  "license": "CC0 (Met Open Access)",
+  "useFor": "Annunciation, Mary's yes, Advent (weeks 5-7)"
+ },
+ "met_436104": {
+  "file": "met_436104.jpg",
+  "title": "The Adoration of the Magi",
+  "artist": "Gerard David",
+  "date": "ca. 1520",
+  "credit": "Gerard David · The Adoration of the Magi · ca. 1520 · The Met (public domain)",
+  "captionCredit": "🎨 Art: Gerard David, The Adoration of the Magi · The Met (public domain)",
+  "source": "https://www.metmuseum.org/art/collection/search/436104",
+  "license": "CC0 (Met Open Access)",
+  "useFor": "Magi, Epiphany 6 Jan (week 10), Christmas"
+ },
+ "met_436101": {
+  "file": "met_436101.jpg",
+  "title": "The Rest on the Flight into Egypt",
+  "artist": "Gerard David",
+  "date": "ca. 1512–15",
+  "credit": "Gerard David · The Rest on the Flight into Egypt · ca. 1512–15 · The Met (public domain)",
+  "captionCredit": "🎨 Art: Gerard David, The Rest on the Flight into Egypt · The Met (public domain)",
+  "source": "https://www.metmuseum.org/art/collection/search/436101",
+  "license": "CC0 (Met Open Access)",
+  "useFor": "Flight into Egypt, trust, journey (weeks 8-9)"
+ }
+}

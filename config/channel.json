@@ -1,0 +1,174 @@
+{
+  "channel": "Still Waters Daily",
+  "paused": false,
+  "handle": "@stillwatersdailyword",
+  "youtubeChannelId": "UC4qn82I1neQTQ3t7-JyfX9Q",
+  "language": "en",
+  "bible": "KJV",
+  "bibleNote": "Scripture text is ALWAYS taken verbatim from data/kjv.json (King James Version, public domain) by reference - never typed by hand.",
+  "metricool": {
+    "brandId": 7823324,
+    "brandLabel": "Still Waters Daily",
+    "youtubeData": "UC4qn82I1neQTQ3t7-JyfX9Q",
+    "instagramData": "stillwatersdailyword",
+    "tiktokData": "still.waters.dail4",
+    "note": "Same structure as the posts scheduled by hand since 2 Nov 2026: per video ONE post for Instagram (Reel) + TikTok with videoThumbnailUrl, and ONE separate YouTube Short post. Verify networksData before every run."
+  },
+  "hosting": {
+    "repo": "Hansieman-SM/still-waters-daily",
+    "releaseUrl": "https://github.com/Hansieman-SM/still-waters-daily/releases/download/{tag}/{file}"
+  },
+  "schedule": {
+    "timezone": "Europe/Amsterdam",
+    "slots": [
+      {
+        "slot": "verse",
+        "time": "13:00",
+        "dayOffset": 0,
+        "name": "Verse of the Day"
+      },
+      {
+        "slot": "loop",
+        "time": "18:00",
+        "dayOffset": 0,
+        "name": "Loop verse"
+      },
+      {
+        "slot": "evening",
+        "time": "02:00",
+        "dayOffset": 1,
+        "name": "Evening Encouragement"
+      }
+    ],
+    "slotNote": "The script date is the calendar day. The evening post of day D goes live at D+1 02:00 Amsterdam (= 20:00 the evening before in New York).",
+    "bufferDays": 8
+  },
+  "voice": {
+    "engine": "kokoro-onnx (Kokoro-82M, Apache-2.0)",
+    "voice": "bm_george",
+    "voiceNote": "British male 'George' - chosen by Hans (Nov 2026). Reference is spoken first.",
+    "lang": "en-gb",
+    "speed": 0.9,
+    "sentencePause": 0.45
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "limits": {
+      "verse": {
+        "minSeconds": 10,
+        "maxSeconds": 42
+      },
+      "evening": {
+        "minSeconds": 14,
+        "maxSeconds": 48
+      },
+      "loop": {
+        "minSeconds": 6,
+        "maxSeconds": 15
+      }
+    },
+    "outroSeconds": 2.2,
+    "loopOutroSeconds": 1.4
+  },
+  "scenes": [
+    "meadow",
+    "moonlake",
+    "sunset",
+    "wheat",
+    "dawnlake"
+  ],
+  "sceneDefaults": {
+    "verse": [
+      "meadow",
+      "dawnlake",
+      "wheat",
+      "sunset"
+    ],
+    "loop": [
+      "sunset",
+      "dawnlake",
+      "meadow",
+      "wheat"
+    ],
+    "evening": [
+      "moonlake"
+    ]
+  },
+  "art": {
+    "dir": "art/met",
+    "note": "Public-domain paintings (The Met Open Access, CC0). Use scene 'art:<file stem>' on Verse of the Day posts now and then (about 2 per week, more in Advent/Christmas). Only paintings listed in art/met/catalog.json may be used; never depict God the Father, nothing denomination-specific or unsuitable."
+  },
+  "subscribe": {
+    "button": "SUBSCRIBE",
+    "sub": "& follow for a daily word of peace"
+  },
+  "hashtags": {
+    "verse": [
+      "#bibleverse",
+      "#verseoftheday",
+      "#christian",
+      "#faith",
+      "#jesus",
+      "#scripture",
+      "#prayer",
+      "#hope",
+      "#dailydevotional"
+    ],
+    "evening": [
+      "#christian",
+      "#encouragement",
+      "#faith",
+      "#jesus",
+      "#bibleverse",
+      "#prayer",
+      "#hope",
+      "#christianquotes",
+      "#peace"
+    ],
+    "loop": [
+      "#bibleverse",
+      "#christian",
+      "#faith",
+      "#jesus",
+      "#scripture",
+      "#prayer",
+      "#hope",
+      "#verseoftheday",
+      "#godisgood"
+    ]
+  },
+  "youtubeTags": {
+    "verse": [
+      "bible verse",
+      "verse of the day",
+      "faith",
+      "jesus",
+      "scripture",
+      "christian",
+      "hope",
+      "daily devotional"
+    ],
+    "evening": [
+      "christian encouragement",
+      "faith",
+      "bible verse",
+      "jesus",
+      "prayer",
+      "hope",
+      "evening devotional",
+      "christian quotes"
+    ],
+    "loop": [
+      "bible verse",
+      "faith",
+      "jesus",
+      "scripture",
+      "christian",
+      "hope",
+      "verse of the day",
+      "short bible verse"
+    ]
+  }
+}
