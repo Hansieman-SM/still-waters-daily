@@ -104,13 +104,13 @@ def render(path, outdir):
     A = longkit.ASS()
     A.style('Brand', 'Lato', 30, 'E2DDD2', align=7, mv=52, ml=118, mr=0, outline=1)
     A.style('Title', 'SWD Cormorant SemiBold', 104, 'F6F0E4', align=5, ml=200, mr=200, outline=3)
-    A.style('Sub', 'SWD Cormorant', 54, 'F6F0E4', align=8, mv=560, ml=200, mr=200, outline=2)
+    A.style('Sub', 'SWD Cormorant', 58, 'F6F0E4', align=8, mv=420, ml=200, mr=200, outline=3)
     A.style('Gold', 'Lato', 34, 'E5C27A', align=8, mv=150, spacing=6, outline=2)
     A.style('Verse', 'SWD Cormorant', 74, 'F6F0E4', align=8, mv=225, ml=230, mr=230, outline=3)
-    A.style('Small', 'Lato', 32, 'E2DDD2', align=2, mv=70, outline=2)
+    A.style('Small', 'Lato', 32, 'E2DDD2', align=2, mv=70, outline=3, back='0A1020', back_alpha=0x40)
     A.add(0, total, 'Brand', CFG['channel'], fade=(0, 0))
     title = bible.passage_title(s['passage'])
-    A.add(0.3, INTRO - 0.4, 'Title', title, fade=(900, 700), extra='\\pos(960,430)')
+    A.add(0.3, INTRO - 0.4, 'Title', title, fade=(900, 700), extra='\\pos(960,330)')
     A.add(0.8, INTRO - 0.4, 'Sub', s.get('subtitle', ''), fade=(900, 700))
     A.add(1.2, INTRO - 0.4, 'Small', f'King James Version  ·  Read slowly, {WORDS[readings]} times, with quiet in between', fade=(900, 700))
     for i, (t0, t1, kind, idx) in enumerate(ev):
@@ -120,7 +120,7 @@ def render(path, outdir):
         A.add(t0, t1, 'Verse', text, fade=(800, 800))
     for k, (q0, q1) in enumerate(quiet):
         A.add(q0 - GAP + 0.3, q0 + 4.5, 'Small', 'Quiet reflection  ·  let the words settle', fade=(800, 800))
-    A.add(total - OUTRO + 0.5, total - 0.3, 'Title', CFG['channel'], fade=(900, 1200), extra='\\pos(960,420)')
+    A.add(total - OUTRO + 0.5, total - 0.3, 'Title', CFG['channel'], fade=(900, 1200), extra='\\pos(960,330)')
     A.add(total - OUTRO + 1.0, total - 0.3, 'Sub', 'Subscribe for a daily word of peace', fade=(900, 1200))
     ass = os.path.join(outdir, sid + '.ass'); A.write(ass)
 
