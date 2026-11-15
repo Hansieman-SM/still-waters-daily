@@ -78,10 +78,27 @@ After scheduling, append one line to `content/archive.jsonl`: `{"date","slot","r
    with curl, max ~25 min). One retry via a small fix + push. Still failing → do not schedule, tell Hans.
 4. QC json pass + sheet looked at → schedule both posts → save ids in state → append to archive → commit + push.
 5. Stock check: fewer than 15 future videos scheduled → catch up (up to 9 scripts in one run).
+5b. Long video: if the next Sunday long video (or the Christmas Eve extra) within 8 days is not scheduled yet, write it, longcheck, push,
+   wait for render-long (poll the release API, max ~45 min), check QC + sheet, schedule it, record it in state.
 6. Calendar check: if `swd.plan` shows NO CALENDAR ENTRY within 14 days, write the next weeks in the same style (Lent from Ash Wednesday
    10 Feb 2027, Easter 28 Mar 2027) into `content/calendar.json` and tell Hans what you planned.
 7. Report: all fine → end with one Dutch line `Still Waters: N video's ingepland t/m <datum>, geen problemen.` (no push).
    Anything failed or needs Hans → SendUserMessage + PushNotification in Dutch: what failed, what you fixed, what he must do.
+
+## Weekly long Sunday video (16:9, built 15 Nov 2026 – Hans: "ja natuurlijk een lange video")
+- One per week, from `content/calendar.json` → `sundayLongVideo[week]` (e.g. week 5 = Psalm 46). Script
+  `content/long/<calendar Sunday>-long-<slug>.json`: `{"id","date","kind":"scripture","week","passage","title","subtitle","minutes":30,
+  "scene","description","hashtags"?,"tags"?}`. `passage` = a whole chapter ("Psalm 46") or a range of 3–30 verses ("Isaiah 9:2-7");
+  when the calendar names a long chapter, pick the best-known 5–25 verse section. Week 8 has an EXTRA one: Luke 2:1-20 for Christmas Eve
+  (date 2026-12-23 so it goes live 24 Dec 03:00) besides John 1:1-14 on the Sunday.
+- `title` (≤ 100): "<Passage> | <key phrase> | 30 Minutes of Peace | Bible Verses for Sleep"-style; `subtitle` = the key phrase.
+  Scenes rotate: moonlake, dawnlake, meadow, sunset, wheat (night scenes suit sleep).
+- `python3 -m swd.longcheck` → OK. Push → `.github/workflows/render-long.yml` renders with `swd.long` (~15 min): intro card, the passage
+  read by George several times (the renderer picks 3–8 readings so each verse rests ~20–35 s in the quiet passes), quiet passes,
+  subscribe card, soft piano, chapters in meta. QC (long branch) + contact sheet in the release (tag = id).
+- LOOK at `<id>_sheet.jpg` and `<id>_thumb.jpg`, then `python3 -m swd.postdata <id>` → ONE Metricool post: YouTube video (not a Short)
+  with custom thumbnail, Monday 03:00 Amsterdam (the day after `date`). Record the Metricool id in `state/posts.json` (`"slot": "long"`).
+- Keep the next long video produced and scheduled at least 3 days before it goes live (daily run step 5b).
 
 ## State
 `state/posts.json`: `{"posts": {"<id>": {"date","slot","status": "scripted|rendered|scheduled|published|failed","release",
@@ -91,5 +108,5 @@ After scheduling, append one line to `content/archive.jsonl`: `{"date","slot","r
 - 2 – 22 Nov 2026: produced by hand in chat sessions (videos in `videos/2026-11/`, 3 posts a day: verse 13:00, loop 18:00, evening 02:00;
   a 30-min Psalm 23 long video on 9 Nov). Refs used are in `content/archive.jsonl`.
 - 15 Nov 2026: automated pipeline built (Hans: "alles hetzelfde laten draaien" as Whispers of the Soul). First automatic items: 23 Nov.
-- Not automated yet: the weekly long Sunday video (calendar `sundayLongVideo`) – only on Hans's request.
+- 15 Nov 2026: weekly long Sunday video automated (swd/long.py). First: Psalm 121 (Mon 23 Nov 03:00), Isaiah 40:1-11 (Mon 30 Nov 03:00).
 - Facebook page is not connected yet (see the startplan doc); when Hans connects it to brand 7823324, add Facebook (Reel) to the social post.
