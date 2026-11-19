@@ -166,6 +166,19 @@
    "publishAt": "2026-11-27 13:00 Europe/Amsterdam",
    "attempts": 0,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=3071433759741724985"
+  },
+  "2026-11-25-loop-thankful-heart": {
+   "date": "2026-11-25",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-11-25-loop-thankful-heart",
+   "metricool": {
+    "social": 433835547,
+    "youtube": 433835556
+   },
+   "publishAt": "2026-11-25 18:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=2811413694399532245"
   }
  }
 }
