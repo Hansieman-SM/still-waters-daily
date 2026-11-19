@@ -179,6 +179,45 @@
    "publishAt": "2026-11-25 18:00 Europe/Amsterdam",
    "attempts": 0,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=2811413694399532245"
+  },
+  "2026-11-24-evening-every-good-gift": {
+   "date": "2026-11-24",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-11-24-evening-every-good-gift",
+   "metricool": {
+    "social": 433982559,
+    "youtube": 433982574
+   },
+   "publishAt": "2026-11-25 02:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=7060205218410613903"
+  },
+  "2026-11-27-loop-contentment": {
+   "date": "2026-11-27",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-11-27-loop-contentment",
+   "metricool": {
+    "social": 433982596,
+    "youtube": 433982616
+   },
+   "publishAt": "2026-11-27 18:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=1534383740851143909"
+  },
+  "2026-11-27-evening-contentment": {
+   "date": "2026-11-27",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-11-27-evening-contentment",
+   "metricool": {
+    "social": 433982641,
+    "youtube": 433982666
+   },
+   "publishAt": "2026-11-28 02:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=8527467769081644077"
   }
  }
 }
