@@ -218,6 +218,45 @@
    "publishAt": "2026-11-28 02:00 Europe/Amsterdam",
    "attempts": 0,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=8527467769081644077"
+  },
+  "2026-11-28-verse-rejoice": {
+   "date": "2026-11-28",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "2026-11-28-verse-rejoice",
+   "metricool": {
+    "social": 435329654,
+    "youtube": 435329676
+   },
+   "publishAt": "2026-11-28 13:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-3516006711434395428"
+  },
+  "2026-11-28-loop-rejoice": {
+   "date": "2026-11-28",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-11-28-loop-rejoice",
+   "metricool": {
+    "social": 435330067,
+    "youtube": 435330083
+   },
+   "publishAt": "2026-11-28 18:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=2015544115932907026"
+  },
+  "2026-11-28-evening-rejoice": {
+   "date": "2026-11-28",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-11-28-evening-rejoice",
+   "metricool": {
+    "social": 435330429,
+    "youtube": 435330459
+   },
+   "publishAt": "2026-11-29 02:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-1059460981191717959"
   }
  }
 }
