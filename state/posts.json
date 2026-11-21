@@ -257,6 +257,45 @@
    "publishAt": "2026-11-29 02:00 Europe/Amsterdam",
    "attempts": 0,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-1059460981191717959"
+  },
+  "2026-11-29-verse-advent-hope": {
+   "date": "2026-11-29",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "2026-11-29-verse-advent-hope",
+   "metricool": {
+    "social": 436524431,
+    "youtube": 436524441
+   },
+   "publishAt": "2026-11-29 13:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-4004706529702231519"
+  },
+  "2026-11-29-loop-advent-hope": {
+   "date": "2026-11-29",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-11-29-loop-advent-hope",
+   "metricool": {
+    "social": 436524733,
+    "youtube": 436524742
+   },
+   "publishAt": "2026-11-29 18:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-2708130868798010287"
+  },
+  "2026-11-29-evening-advent-hope": {
+   "date": "2026-11-29",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-11-29-evening-advent-hope",
+   "metricool": {
+    "social": 436524752,
+    "youtube": 436524766
+   },
+   "publishAt": "2026-11-30 02:00 Europe/Amsterdam",
+   "attempts": 0,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=1366242340761323846"
   }
  }
 }

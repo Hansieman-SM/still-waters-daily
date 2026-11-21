@@ -77,3 +77,6 @@
 {"date": "2026-11-28", "slot": "verse", "ref": "Philippians 4:4", "hook": "Joy for an ordinary day", "title": "Rejoice in the Lord Alway", "id": "2026-11-28-verse-rejoice"}
 {"date": "2026-11-28", "slot": "loop", "ref": "Psalm 16:11", "hook": "Where is joy found?", "title": "In Thy Presence Is Fulness of Joy", "id": "2026-11-28-loop-rejoice"}
 {"date": "2026-11-28", "slot": "evening", "ref": "Nehemiah 8:10", "hook": "Too tired for joy tonight?", "title": "The Joy of the Lord Is Your Strength", "id": "2026-11-28-evening-rejoice"}
+{"date": "2026-11-29", "slot": "verse", "ref": "Isaiah 9:2", "hook": "Walking in the dark?", "title": "The People That Walked in Darkness Have Seen a Great Light", "id": "2026-11-29-verse-advent-hope"}
+{"date": "2026-11-29", "slot": "loop", "ref": "Psalm 39:7", "hook": "What are you waiting for?", "title": "My Hope Is in Thee", "id": "2026-11-29-loop-advent-hope"}
+{"date": "2026-11-29", "slot": "evening", "ref": "Romans 15:13", "hook": "Running low on hope tonight?", "title": "Now the God of Hope Fill You", "id": "2026-11-29-evening-advent-hope"}
