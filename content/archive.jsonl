@@ -80,3 +80,6 @@
 {"date": "2026-11-29", "slot": "verse", "ref": "Isaiah 9:2", "hook": "Walking in the dark?", "title": "The People That Walked in Darkness Have Seen a Great Light", "id": "2026-11-29-verse-advent-hope"}
 {"date": "2026-11-29", "slot": "loop", "ref": "Psalm 39:7", "hook": "What are you waiting for?", "title": "My Hope Is in Thee", "id": "2026-11-29-loop-advent-hope"}
 {"date": "2026-11-29", "slot": "evening", "ref": "Romans 15:13", "hook": "Running low on hope tonight?", "title": "Now the God of Hope Fill You", "id": "2026-11-29-evening-advent-hope"}
+{"date": "2026-11-30", "slot": "verse", "ref": "Isaiah 40:3", "hook": "Is your heart ready for Him?", "title": "Prepare Ye the Way of the Lord", "id": "2026-11-30-verse-prepare-the-way"}
+{"date": "2026-11-30", "slot": "loop", "ref": "Psalm 25:4", "hook": "Not sure which way to go?", "title": "Shew Me Thy Ways, O Lord", "id": "2026-11-30-loop-prepare-the-way"}
+{"date": "2026-11-30", "slot": "evening", "ref": "Psalm 24:7", "hook": "Is there room for Him tonight?", "title": "The King of Glory Shall Come In", "id": "2026-11-30-evening-make-room"}
