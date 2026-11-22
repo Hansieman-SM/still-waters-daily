@@ -1,0 +1,17 @@
+{
+ "id": "2026-11-30-evening-make-room",
+ "date": "2026-11-30",
+ "slot": "evening",
+ "week": 5,
+ "theme": "Make room for the King",
+ "hook": "Is there room for Him tonight?",
+ "lines": [
+  "Open the door, even a little.",
+  "He needs no tidy room.",
+  "He comes in gently tonight."
+ ],
+ "ref": "Psalm 24:7",
+ "title": "The King of Glory Shall Come In",
+ "tiktokTitle": "Make room for the King 🌙",
+ "scene": "moonlake"
+}
