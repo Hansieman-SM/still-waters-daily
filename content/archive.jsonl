@@ -83,3 +83,6 @@
 {"date": "2026-11-30", "slot": "verse", "ref": "Isaiah 40:3", "hook": "Is your heart ready for Him?", "title": "Prepare Ye the Way of the Lord", "id": "2026-11-30-verse-prepare-the-way"}
 {"date": "2026-11-30", "slot": "loop", "ref": "Psalm 25:4", "hook": "Not sure which way to go?", "title": "Shew Me Thy Ways, O Lord", "id": "2026-11-30-loop-prepare-the-way"}
 {"date": "2026-11-30", "slot": "evening", "ref": "Psalm 24:7", "hook": "Is there room for Him tonight?", "title": "The King of Glory Shall Come In", "id": "2026-11-30-evening-make-room"}
+{"date": "2026-12-01", "slot": "verse", "ref": "Isaiah 7:14", "hook": "Does God feel far away?", "title": "They Shall Call His Name Immanuel", "id": "2026-12-01-verse-the-promise"}
+{"date": "2026-12-01", "slot": "loop", "ref": "Hebrews 10:23", "hook": "Holding on by a thread?", "title": "He Is Faithful That Promised", "id": "2026-12-01-loop-the-promise"}
+{"date": "2026-12-01", "slot": "evening", "ref": "2 Corinthians 1:20", "hook": "Tired of broken promises?", "title": "All the Promises of God in Him Are Yea", "id": "2026-12-01-evening-promises-kept"}

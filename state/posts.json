@@ -332,6 +332,42 @@
    },
    "publishAt": "2026-12-01 02:00 Europe/Amsterdam",
    "attempts": 0
+  },
+  "2026-12-01-verse-the-promise": {
+   "date": "2026-12-01",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/still-waters-daily/releases/download/2026-12-01-verse-the-promise/2026-12-01-verse-the-promise.mp4",
+   "metricool": {
+    "social": 438524426,
+    "youtube": 438524442
+   },
+   "publishAt": "2026-12-01 13:00 Europe/Amsterdam",
+   "attempts": 0
+  },
+  "2026-12-01-loop-the-promise": {
+   "date": "2026-12-01",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/still-waters-daily/releases/download/2026-12-01-loop-the-promise/2026-12-01-loop-the-promise.mp4",
+   "metricool": {
+    "social": 438524842,
+    "youtube": 438524864
+   },
+   "publishAt": "2026-12-01 18:00 Europe/Amsterdam",
+   "attempts": 0
+  },
+  "2026-12-01-evening-promises-kept": {
+   "date": "2026-12-01",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/still-waters-daily/releases/download/2026-12-01-evening-promises-kept/2026-12-01-evening-promises-kept.mp4",
+   "metricool": {
+    "social": 438525121,
+    "youtube": 438525137
+   },
+   "publishAt": "2026-12-02 02:00 Europe/Amsterdam",
+   "attempts": 0
   }
  }
 }
