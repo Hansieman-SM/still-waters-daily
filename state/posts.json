@@ -368,6 +368,42 @@
    },
    "publishAt": "2026-12-02 02:00 Europe/Amsterdam",
    "attempts": 0
+  },
+  "2026-12-02-verse-waiting-with-hope": {
+   "date": "2026-12-02",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/still-waters-daily/releases/download/2026-12-02-verse-waiting-with-hope/2026-12-02-verse-waiting-with-hope.mp4",
+   "metricool": {
+    "social": 440024423,
+    "youtube": 440024459
+   },
+   "publishAt": "2026-12-02 13:00 Europe/Amsterdam",
+   "attempts": 0
+  },
+  "2026-12-02-loop-expectation": {
+   "date": "2026-12-02",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/still-waters-daily/releases/download/2026-12-02-loop-expectation/2026-12-02-loop-expectation.mp4",
+   "metricool": {
+    "social": 440024487,
+    "youtube": 440024524
+   },
+   "publishAt": "2026-12-02 18:00 Europe/Amsterdam",
+   "attempts": 0
+  },
+  "2026-12-02-evening-hope-in-the-dark": {
+   "date": "2026-12-02",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/still-waters-daily/releases/download/2026-12-02-evening-hope-in-the-dark/2026-12-02-evening-hope-in-the-dark.mp4",
+   "metricool": {
+    "social": 440024551,
+    "youtube": 440024576
+   },
+   "publishAt": "2026-12-03 02:00 Europe/Amsterdam",
+   "attempts": 0
   }
  }
 }
