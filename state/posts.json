@@ -404,6 +404,42 @@
    },
    "publishAt": "2026-12-03 02:00 Europe/Amsterdam",
    "attempts": 0
+  },
+  "2026-12-03-verse-god-with-us": {
+   "date": "2026-12-03",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "2026-12-03-verse-god-with-us",
+   "metricool": {
+    "social": 441475988,
+    "youtube": 441476010
+   },
+   "publishAt": "2026-12-03 13:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-03-loop-he-is-near": {
+   "date": "2026-12-03",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-12-03-loop-he-is-near",
+   "metricool": {
+    "social": 441476573,
+    "youtube": 441476594
+   },
+   "publishAt": "2026-12-03 18:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-03-evening-he-is-with-you": {
+   "date": "2026-12-03",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-12-03-evening-he-is-with-you",
+   "metricool": {
+    "social": 441476636,
+    "youtube": 441476665
+   },
+   "publishAt": "2026-12-04 02:00 Europe/Amsterdam",
+   "attempts": 1
   }
  }
 }
