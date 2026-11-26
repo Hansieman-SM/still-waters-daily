@@ -440,6 +440,42 @@
    },
    "publishAt": "2026-12-04 02:00 Europe/Amsterdam",
    "attempts": 1
+  },
+  "2026-12-04-verse-light-of-the-world": {
+   "date": "2026-12-04",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "2026-12-04-verse-light-of-the-world",
+   "metricool": {
+    "social": 442874279,
+    "youtube": 442874303
+   },
+   "publishAt": "2026-12-04 13:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-04-loop-lamp-unto-my-feet": {
+   "date": "2026-12-04",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-12-04-loop-lamp-unto-my-feet",
+   "metricool": {
+    "social": 442874742,
+    "youtube": 442874761
+   },
+   "publishAt": "2026-12-04 18:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-04-evening-let-your-light-shine": {
+   "date": "2026-12-04",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-12-04-evening-let-your-light-shine",
+   "metricool": {
+    "social": 442875035,
+    "youtube": 442875061
+   },
+   "publishAt": "2026-12-05 02:00 Europe/Amsterdam",
+   "attempts": 1
   }
  }
 }
