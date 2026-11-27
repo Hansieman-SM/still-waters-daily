@@ -476,6 +476,42 @@
    },
    "publishAt": "2026-12-05 02:00 Europe/Amsterdam",
    "attempts": 1
+  },
+  "2026-12-05-verse-it-will-surely-come": {
+   "date": "2026-12-05",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "2026-12-05-verse-it-will-surely-come",
+   "metricool": {
+    "social": 444135483,
+    "youtube": 444135854
+   },
+   "publishAt": "2026-12-05 13:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-05-loop-patience-wait": {
+   "date": "2026-12-05",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-12-05-loop-patience-wait",
+   "metricool": {
+    "social": 444136019,
+    "youtube": 444136180
+   },
+   "publishAt": "2026-12-05 18:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-05-evening-not-forgotten": {
+   "date": "2026-12-05",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-12-05-evening-not-forgotten",
+   "metricool": {
+    "social": 444136417,
+    "youtube": 444136503
+   },
+   "publishAt": "2026-12-06 02:00 Europe/Amsterdam",
+   "attempts": 1
   }
  }
 }
