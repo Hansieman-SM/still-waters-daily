@@ -512,6 +512,54 @@
    },
    "publishAt": "2026-12-06 02:00 Europe/Amsterdam",
    "attempts": 1
+  },
+  "2026-12-06-verse-prince-of-peace": {
+   "date": "2026-12-06",
+   "slot": "verse",
+   "status": "scheduled",
+   "release": "2026-12-06-verse-prince-of-peace",
+   "metricool": {
+    "social": 445291789,
+    "youtube": 445291798
+   },
+   "publishAt": "2026-12-06 13:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-06-loop-perfect-peace": {
+   "date": "2026-12-06",
+   "slot": "loop",
+   "status": "scheduled",
+   "release": "2026-12-06-loop-perfect-peace",
+   "metricool": {
+    "social": 445291960,
+    "youtube": 445291965
+   },
+   "publishAt": "2026-12-06 18:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-06-evening-peace-in-trouble": {
+   "date": "2026-12-06",
+   "slot": "evening",
+   "status": "scheduled",
+   "release": "2026-12-06-evening-peace-in-trouble",
+   "metricool": {
+    "social": 445292135,
+    "youtube": 445292144
+   },
+   "publishAt": "2026-12-07 02:00 Europe/Amsterdam",
+   "attempts": 1
+  },
+  "2026-12-06-long-psalm-46": {
+   "date": "2026-12-06",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "2026-12-06-long-psalm-46",
+   "metricool": {
+    "youtube": 445292316
+   },
+   "publishAt": "2026-12-07 03:00 Europe/Amsterdam",
+   "attempts": 1,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7823324&openWithPostUuid=-900225111071765838"
   }
  }
 }
